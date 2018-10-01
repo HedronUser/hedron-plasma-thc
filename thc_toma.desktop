@@ -1,0 +1,8 @@
+
+[Desktop Entry]
+Name==	LinuxCNC-PLASMA-THC300
+Exec=/usr/bin/linuxcnc '/home/me/linuxcnc/configs/thc-toma/thc_toma.ini'
+Type=Application
+Comment=
+Icon=linuxcncicon
+Name[en_US]=thc_toma

@@ -122,8 +122,8 @@ setp edge.1.in-edge 1
 
 # Change the pins to corespond to inputs from THC or BOB for UP and DOWN signals
 # For negative inputs use the omited part, use lower ones and omit upper ones
-net MoveDown parport.0.pin-10-in => or2.0.in0
-net MoveUp parport.0.pin-11-in => or2.0.in1 mux2.1.sel
+net MoveDown parport.0.pin-11-in => or2.0.in0
+net MoveUp parport.0.pin-12-in => or2.0.in1 mux2.1.sel
 #net MoveDown parport.0.pin-10-in-not => or2.0.in0
 #net MoveUp parport.0.pin-11-in-not => or2.0.in1 mux2.1.sel
 
@@ -131,8 +131,8 @@ net MoveUp parport.0.pin-11-in => or2.0.in1 mux2.1.sel
 
 # Change the pins to corespond to Z-Home limit swith and ARCOK input from THC or BOB
 # For negative inputs use the omited part, use lower ones and omit upper ones
-net FloatSwitch parport.0.pin-13-in => or2.1.in1 and2.4.in0 and2.5.in1 and2.6.in1
-net ArcOK parport.0.pin-12-in => or2.4.in1 xor2.1.in1 oneshot.2.in
+net FloatSwitch parport.0.pin-10-in => or2.1.in1 and2.4.in0 and2.5.in1 and2.6.in1
+net ArcOK parport.0.pin-13-in => or2.4.in1 xor2.1.in1 oneshot.2.in
 #net FloatSwitch parport.0.pin-13-in-not => or2.1.in1 and2.4.in0 and2.5.in1 and2.6.in1
 #net ArcOK parport.0.pin-12-in-not => or2.4.in1 xor2.1.in1 oneshot.2.in
 
